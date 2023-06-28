@@ -1,0 +1,91 @@
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>User Profile</title>
+      <link rel="stylesheet" href="../css/profile.css">
+      <script src="https://kit.fontawesome.com/5b37819dfa.js" crossorigin="anonymous"></script>
+
+   </head>
+   <body>
+      <div class="header">
+         <nav>
+            <a href="../php/home.php"><img src="../images/logo/logo.png" class="logo"></a>
+             <ul class="nav-links">
+                <li><a href="../php/land advertisements.php"><b>LANDS</b></a></li>
+                <li><a href="../php/SellYourLand.php"><b>SELL YOUR LANDS</b></a></li>
+                <li><a href="../php/contactus.php"><b>CONTACT US</b></a></li>
+                <li><a href="about.html"><b>ABOUT US</b></a></li>
+                <li><a href="../php/login_olss.php"><b>LOGIN</b></a></li>
+                <li><a href="../php/signup_olss.php"><b>REGISTER</b></a></li>
+                <li><a href="#"><b>PROFILE</b></a></li>
+             </ul>
+         </nav>
+     </div>
+     
+     <section></section>
+     
+     <div class="wrapper">
+        <b><h1>Profile</h1></b>
+    
+       <form action="../php/conn2.php" method="post">
+         <div class="inputBox">
+           <label for="full name">Full Name</label>
+           <input type="text" placeholder="Name" id="full_name" name="full_name" required>
+         </div>
+         <div class="inputBox">
+            <label for="email">Email</label>
+            <input type="email" placeholder="Email" id="email" name="email" required>
+         </div>
+         <div class="inputBox">
+            <label for="password">Password</label>
+            <input type="password" placeholder="Password" id="password" name="password" required>
+         </div>
+         <div class="inputBox">
+            <label for="cpassword">Confirm Password</label>
+            <input type="password" placeholder="Confirm Password" id="cpassword" name="cpassword"required>
+         </div>
+         <div class="inputBox">
+           <center> <button type="submit" class="btn">Update Profile</button></center>
+         </div>
+        </form>
+        </div>
+        
+        
+        <center>
+         <footer class="footer">
+            <div class="ccontainer">
+                 <div class="row">
+                     <div class="footer-col">
+                         <h4>quick links</h4>
+                         <ul>
+                            <li><a href="../php/home.php">Home</a></li>
+                            <li><a href="about.html">about us</a></li>
+                            <li><a href="feedback.html">feedback</a></li>
+                            <li><a href="new privacy.html">privacy policy</a></li>
+                         <li><a href="TC.html">Terms & Conditions</a></li>
+                         </ul>
+                     </div>
+                     <div class="footer-col">
+                         <h4>get help</h4>
+                         <ul>
+                             <li><a href="faq.html">FAQ</a></li>
+                             <li><a href="#">contact us</a></li>
+                         </ul>
+                     </div>
+                     <div class="footer-col">
+                         <h4>follow us</h4>
+                         <div class="social-links">
+                             <a href="#"><i class="fab fa-facebook-f"></i></a>
+                             <a href="#"><i class="fab fa-twitter"></i></a>
+                             <a href="#"><i class="fab fa-instagram"></i></a>
+                             <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+       </footer>
+       </center>
+     </body>
+</html>

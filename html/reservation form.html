@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Land Reservation Request Form</title>
+
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/reservation form.css">
+        <script src="https://kit.fontawesome.com/5b37819dfa.js" crossorigin="anonymous"></script>
+        <script src="../js/reservation form.js"></script>
+
+    </head>
+
+    <body>
+        <!--header-->
+        <div class="header">
+            <nav>
+                <a href="../php/home.php"><img src="../images/logo.png" class="logo"></a>
+                <ul class="nav-links">
+                    <li><a href="../php/land advertisements.php"><b>LANDS</b></a></li>
+                    <li><a href="../php/SellYourLand.php"><b>SELL YOUR LANDS</b></a></li>
+                    <li><a href="../php/contactus.php"><b>CONTACT US</b></a></li>
+                    <li><a href="about.html"><b>ABOUT US</b></a></li>
+                    <li><a href="../php/login_olss.php"><b>LOGIN</b></a></li>
+                    <li><a href="../php/signup_olss.php"><b>REGISTER</b></a></li>
+                    <li><a href="profile.html"><b>PROFILE</b></a></li>
+                </ul>
+            </nav>
+        </div>
+        
+        <div id="body-content">
+        <br/><br/>
+        <center>
+            <h1  id="form-head">Land Reservation Request Form</h1>
+        </center>
+
+        <!--reservation form-->
+        <form method="post" action="../php/reqform.php" target="_self" enctype="multipart/form-data">
+ 
+            Name with initials : <br/> 
+            
+            <select name="titles" id="titles">
+                <option value="Rev">Rev</option>
+                <option value="Mr" selected>Mr</option>
+                <option value="Mrs">Mrs</option>
+                <option value="Miss">Miss</option>
+            </select>
+            
+            <input type="text" name="nameinitials" placeholder="Name with initials" required/><br/><br/>
+            Full Name : 
+            <input type="text" name="fullname" placeholder="Full Name" required/><br/><br/>
+            
+            NIC : 
+            <input type="text" name="nic" required/><br/><br/>
+            
+            Permanent Address : 
+            <br/><textarea name="address" rows="5" cols="70" required></textarea><br/><br/>
+            
+            Occupation : 
+            <input type="text" name="occupation"/><br/><br/>
+            
+            Nationality : 
+            <input type="text" name="nationality"/><br/><br/>
+            
+            Gender : <input type="radio" name="gender" id="male" value="male"/>
+                     <label for="male">Male</label>
+                     <input type="radio" name="gender"id="female" value="female"/>
+                     <label for="female">Female</label><br/><br/>    
+            
+            Contact No : <br/><br/> 
+            
+            Mobile : 
+            <input type="phone" name="mobile" placeholder="07XXXXXXXX" pattern="[0-9]{10}" required/>
+            &nbsp;&nbsp;&nbsp;
+            Home : 
+            <input type="phone" name="home" placeholder="0123456789" pattern="[0-9]{10}"/><br/><br/> 
+            
+            Email : 
+            <input type="email" placeholder="abc@gmail.com" name="email" 
+             required/><br/><br/> 
+            
+            Land ID that you need to reserve : 
+            <input type="text" name="landID" required/><br/><br/>
+            
+            Monthly Income(Approximately in LKR) : 
+            <input type="text" name="income" /><br/><br/>
+            
+            Are you an income taxpayer? <input type="radio" name="tax" id="yes" value="yes"/>
+                                        <label for="yes">Yes</label>
+                                        <input type="radio" name="tax" id="no" value="no"/>
+                                        <label for="no">No</label><br/><br/>
+            
+            <h4>Upload the following documents</h4>
+
+            <!--Document upload section-->
+            <fieldset>
+                <legend>Documents</legend>
+
+                1)Certified copy of NIC : 
+                <input type="file" class="doc" id="nic" name="nic" required/></br/><br/>
+            
+                2)Birth certificate : 
+                <input type="file" class="doc" id="birthcertificate" name="birthcertificate" required><br/><br/>
+
+                3)Salary Slip : 
+                <input type="file" class="doc" id="salaryslip" name="salaryslip" required/><br/><br/>
+
+                4)Other documents (if any) : 
+                <input type="file" class="doc" id="otherdoc" name="otherdoc"><br/><br/>
+            
+            </fieldset><br/>
+
+            <input type="checkbox" id="certification" name="certification" onclick="enableButton()"/>
+            I hereby certify that the information and documents given above is true and accurate
+            to the best of my knowledge.<br/><br/>
+            
+            <center>
+             <input type="submit" value="Submit" name="submit" id="submitBtn" disabled/>
+            </center>
+        
+        </form>
+        </div>
+
+        <!--footer-->
+        <footer class="footer">
+            <div class="container">
+                 <div class="row">
+                     <div class="footer-col">
+                         <h4>quick links</h4>
+                         <ul>
+                            <li><a href="../php/home.php">Home</a></li>
+                            <li><a href="about.html">about us</a></li>
+                            <li><a href="feedback.html">feedback</a></li>
+                            <li><a href="new privacy.html">privacy policy</a></li>
+                         <li><a href="TC.html">Terms & Conditions</a></li>
+                         </ul>
+                     </div>
+                     <div class="footer-col">
+                         <h4>get help</h4>
+                         <ul>
+                             <li><a href="faq.html">FAQ</a></li>
+                             <li><a href="#">contact us</a></li>
+                         </ul>
+                     </div>
+                     <div class="footer-col">
+                         <h4>follow us</h4>
+                         <div class="social-links">
+                             <a href="#"><i class="fab fa-facebook-f"></i></a>
+                             <a href="#"><i class="fab fa-twitter"></i></a>
+                             <a href="#"><i class="fab fa-instagram"></i></a>
+                             <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                         </div>
+                     </div>
+                 </div>
+            </div>
+      </footer>
+    </body>  
+</html>
